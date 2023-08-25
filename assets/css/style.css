@@ -1,0 +1,398 @@
+/*MAIN STYLES*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* START HEADER STYLES INCLUDING (NAVBAR & HERO) */
+
+header {
+    height: 100vh;
+    max-width: 100vw;
+}
+
+/*START NAVBAR STYLES */
+
+.navbar {
+    height: 100px;
+    width: 100%;
+    color: white;
+    background-color: #2C3E50;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    padding: 0 125px;
+    z-index: 10;
+}
+
+.navbar .list {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.navbar .list li {
+    list-style: none;
+
+}
+
+.navbar .list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar button {
+    display: none;
+}
+
+nav button {
+    background-color: #1ABC9C;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+/*END NAVBAR STYLES*/
+
+/*START HERO*/
+
+.hero {
+    background-color: #1ABC9C;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 53px;
+    color: white;
+}
+
+.hero .picture {
+    position: relative;
+}
+
+.hero .circle {
+    width: 200px;
+    height: 200px;
+    background-color: #2C3E50;
+    border-radius: 50%;
+}
+
+.hero .picture img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.icon {
+    position: relative;
+}
+
+.icon::before {
+    content: "_________";
+    display: block;
+    position: absolute;
+    left: 40px;
+
+
+}
+
+.icon::after {
+    content: "_________";
+    position: absolute;
+    right: 40px;
+}
+
+/*END HERO*/
+
+/*END HEADER*/
+
+/*START SECTION 1 (PORTFOLIO)*/
+
+#Portfolio h1 {
+    width: max-content;
+    margin: 25px auto;
+    color: #2C3E50;
+
+}
+
+#Portfolio .icon {
+    width: max-content;
+    margin: 25px auto;
+
+}
+
+#Portfolio .icon::before {
+    color: #2C3E50;
+
+}
+
+#Portfolio .container {
+    max-width: 1000px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 25px 0;
+}
+
+#Portfolio .container .card {
+    width: 320px;
+    height: 256px;
+    background-color: #2C3E50;
+    margin: 5px;
+    position: relative;
+    box-shadow: 0 0 15px #054c3e;
+}
+
+#Portfolio .container .card .circle {
+    background-color: #1ABC9C;
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    position: relative;
+}
+
+#Portfolio .container .card .circle img {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+
+/*END SECTION 1 (PORTFOLIO)*/
+
+/*START SECTION 2 (ABOUT)*/
+#About {
+    background-color: #1ABC9C;
+    color: white;
+}
+
+#About h1 {
+    width: max-content;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+#About .icon {
+    width: max-content;
+    margin: 30px auto;
+}
+
+#About .container-about {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#About .container-about .card-1 {
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+}
+
+#About .container-about .card-2 {
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 25px 0;
+}
+
+.btn button {
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: #1ABC9C;
+    border-radius: 5px;
+    border: 2px solid white;
+
+}
+
+/*END SECTION 2 (ABOUT)*/
+
+
+/*START SECTION 3 (CONTACT ME)*/
+
+#Contact h1 {
+    width: max-content;
+    margin: 0 auto;
+    padding: 25px;
+    color: #2C3E50;
+}
+
+#Contact .icon {
+    width: max-content;
+    margin: 25px auto;
+
+}
+
+.container-1 {
+    max-width: 500px;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #1ABC9C;
+
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+
+    border-radius: 5px;
+}
+
+
+input[type="submit"] {
+    background-color: #1ABC9C;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #2C3E50;
+}
+
+input,
+textarea {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #1ABC9C;
+}
+
+input:focus {
+    outline: 1px dotted #1ABC9C;
+}
+
+textarea:focus {
+    outline: 1px dotted #1ABC9C;
+}
+
+
+/*END SECTION 3 (CONTACT ME)*/
+
+/*START FOOTER*/
+
+footer {
+    max-width: 100vw;
+    background-color: #2C3E50;
+    color: white;
+}
+
+.container-2 {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-3 {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-4 {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.card-5 {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .card-5 p {
+    text-align: center;
+}
+
+/*END FOOTER*/
+
+
+
+@media screen and (max-width:800px) {
+    .navbar button {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar .list {
+        display: none;
+    }
+
+    .navbar {
+        padding: 0 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 616px) {
+    .container-2 {
+        justify-content: center;
+
+    }
+
+    footer .card-5 h2 {
+        text-align: center;
+        padding: 5px;
+    }
+
+
+
+}
